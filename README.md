@@ -24,6 +24,11 @@
   - `data_description.txt` : 각 특성에 대한 설명
   - `House_Price_TFDF.ipynb` : TensorFlow Decision Forests 모델 실습 노트북
 
+- **Distracted Driving Risk Detection Challenge**
+  - 운전자 심박수, 차량 속도, 날씨 등 차량 IoT/테레매틱스 지표로부터 사고 위험도(1~4등급)를 분류하는 대회
+  - `features.py`, `data.py` : 속도·가속도·날씨·도로구간 집계 특성을 생성하고 표준화하여 학습/추론용 행렬로 변환
+  - `models.py`, `ssl_pl.py`, `train.py` : XGBoost·LightGBM·CatBoost 스태킹과 온도보정, 반지도 학습·퓨도라벨링을 결합한 엔드 투 엔드 파이프라인
+
 - **titanic**
   - `train.csv`, `test.csv`, `gender_submission.csv` : 타이타닉 생존 예측용 데이터
   - `titanic.ipynb`, `titanic-ml.ipynb` : EDA와 모델링 과정을 담은 노트북
